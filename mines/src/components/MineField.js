@@ -12,12 +12,11 @@ export default props => {
         })
         return <View style={r} style={{ flexDirection: 'row' }}>{columns}</View>
     })
-    return (<SafeAreaView style={styles.container}>{rows}</SafeAreaView>)
+    return <SafeAreaView style={styles.container}>{rows}</SafeAreaView>
 }
 
 const styles = StyleSheet.create({
     container: {
-
         backgroundColor: '#EEE'
     }
 })
