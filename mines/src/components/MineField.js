@@ -10,7 +10,7 @@ export default props => {
                 onOpen={() => props.onOpenField(r, c)}
                 onSelect={e => { props.onSelect(r, c) }} />
         })
-        return <View style={r} style={{ flexDirection: 'row' }}>{columns}</View>
+        return <View key={r} style={r} style={{ flexDirection: 'row' }}>{columns}</View>
     })
     return <SafeAreaView style={styles.container}>{rows}</SafeAreaView>
 }
