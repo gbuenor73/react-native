@@ -6,7 +6,6 @@ import UsersContext from '../context/UsersContext'
 
 export default props => {
 
-
     const { state, dispatch } = useContext(UsersContext)
 
     function confirmUserDeletion(user) {
